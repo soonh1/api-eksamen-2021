@@ -15,36 +15,47 @@
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "description": {
       "type": "text",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "price": {
       "type": "decimal",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "img": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": ["files", "images", "videos"],
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "qty": {
       "type": "integer",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "color": {
       "type": "enumeration",
-      "enum": ["Red", "Blue", "Black", "White", "Yellow", "Purple"],
+      "enum": [
+        "Red",
+        "Blue",
+        "Black",
+        "White",
+        "Yellow",
+        "Purple"
+      ],
       "required": true,
-      "unique": true
+      "unique": false
     },
     "categories": {
       "collection": "category"
@@ -54,6 +65,9 @@
     },
     "type": {
       "model": "type"
+    },
+    "supplier": {
+      "model": "supplier"
     }
   }
 }
