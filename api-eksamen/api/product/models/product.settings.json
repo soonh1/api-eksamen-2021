@@ -7,8 +7,8 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
-    "draftAndPublish": true
+    "timestamps": false,
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -30,11 +30,7 @@
     "img": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
+      "allowedTypes": ["files", "images", "videos"],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
@@ -46,14 +42,7 @@
     },
     "color": {
       "type": "enumeration",
-      "enum": [
-        "Red",
-        "Blue",
-        "Black",
-        "White",
-        "Yellow",
-        "Purple"
-      ],
+      "enum": ["Red", "Blue", "Black", "White", "Yellow", "Purple"],
       "required": true,
       "unique": true
     },
