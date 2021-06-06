@@ -22,6 +22,10 @@
     "email": {
       "type": "email",
       "required": true
+    },
+    "products": {
+      "via": "supplier",
+      "collection": "product"
     }
   }
 }

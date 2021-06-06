@@ -21,6 +21,10 @@
       "type": "text",
       "required": true,
       "unique": true
+    },
+    "products": {
+      "via": "category",
+      "collection": "product"
     }
   }
 }

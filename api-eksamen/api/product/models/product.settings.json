@@ -57,17 +57,20 @@
       "required": true,
       "unique": false
     },
-    "categories": {
-      "collection": "category"
+    "category": {
+      "model": "category",
+      "via": "products"
     },
     "sizes": {
       "collection": "size"
     },
     "type": {
-      "model": "type"
+      "model": "type",
+      "via": "products"
     },
     "supplier": {
-      "model": "supplier"
+      "model": "supplier",
+      "via": "products"
     }
   }
 }
